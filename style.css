@@ -2,26 +2,29 @@
     margin: 2;
     padding: 2;
     border: 2;
+    image-rendering: auto;
     font-size: 100%;
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;
+    font-weight: 200%;
     vertical-align: baseline;
-    text-decoration: none;
+    text-align: justify;
     list-style: none;
-    background-color: pink;
-    color: #fc1a83
+    background-color: rgb(238, 241, 148);
+    background-attachment: 200px;
+    color: rgb(193, 2, 193);
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(106, 245, 127);
 }
 
 p,
 h2 {
-    color: rgb(239, 9, 17)
-}
-
-h1 {
-    font-size: 20px;
+    color: rgb(177, 132, 240);
     text-align: center;
-    color: #0279e2;
-
+    font-size: medium;
 }
 
 p,
@@ -29,12 +32,15 @@ li {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
+    color: rgb(9, 49, 247);
 }
 
 img {
-    display: block;
+    display:inline-flexbox;
     margin: 0 auto;
     width: 15%;
+    text-decoration: wavy;
+    display: grid;
 }
 
 .conteudo {
@@ -60,9 +66,11 @@ header nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: 3s;
 }
 
 header nav ul li a {
+    border-radius: 0%;
     margin: 0px 15px;
     color: #0279e2;
 }
@@ -70,6 +78,7 @@ header nav ul li a {
 .botao {
     padding: 5px 30px;
     border-radius: 10px;
+    display: inline;
 }
 
 .botao.botao-destaque {
@@ -87,15 +96,16 @@ header nav ul li a {
 }
 
 .sobre article h1 {
-    font-size: 70px;
+    font-size: 200px;
     line-height: 90%;
     font-weight: 400;
     color: #0279e2;
+    
 }
 
 .sobre article h2,
 .sobre article p {
-    color: #0279e2;
+    color: #5fabed;
 }
 
 .sobre article h2 {
@@ -103,7 +113,7 @@ header nav ul li a {
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 200%;
-    color: #0279e2;
+    color: #44efec;
 }
 
 .sobre article p {
@@ -214,7 +224,7 @@ footer ul li a img {
         border: 2px solid rgb(14, 163, 212);
         border-radius: 10px;
         padding: 20px;
-        color: rgb(239, 254, 191);
+        color: rgb(241, 16, 173);
     }
 
     .agrupamento {
@@ -224,18 +234,18 @@ footer ul li a img {
 
     .agrupamento-botao {
         padding-top: 10px;
-        color: rgb(239, 9, 181)
+        color: rgb(239, 227, 9);
     }
 
     .entrada:focus {
         outline: none;
         box-shadow: 0 0 0 0.2rem rgba(12, 222, 194, 0.5);
-        color: rgb(239, 9, 181)
+        color: rgb(239, 9, 181);
     }
 
     .entrada.mensagem {
         resize: none;
-        color: rgb(193, 122, 23)
+        color: rgb(239, 227, 9);
     }
 
     .rotulo {
@@ -246,12 +256,20 @@ footer ul li a img {
 
     h3 {
         font-family: inherit;
-        line-height: 1.15;
-        border: 2px solid rgb(238, 243, 104);
-        border-radius: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 10px;
+        flex: 25%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-template-columns: 4fr;
+        grid-template-rows: 4fr;
+
     }
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Roboto' arial, cursive;
+        text-align: center;
+    }
+
 }
